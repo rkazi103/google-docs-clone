@@ -2,8 +2,14 @@ import Head from "next/head";
 import Header from "../components/Header";
 import NewDocumentSection from "../components/NewDocumentSection";
 import Icon from "@material-tailwind/react/Icon";
+import { getSession, useSession } from "next-auth/client";
+import Login from "../components/Login";
 
 export default function Home() {
+  const [session] = useSession();
+
+  if (!session) return <Login />;
+
   return (
     <div className="">
       <Head>
@@ -26,3 +32,13 @@ export default function Home() {
     </div>
   );
 }
+
+export const getServerSideProps = async (context) => {
+  const session = await getSession(context);
+
+  return {
+    props: {
+      session,
+    },
+  };
+};
