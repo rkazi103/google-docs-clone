@@ -5,6 +5,7 @@ import { useRouter } from "next/dist/client/router";
 import { db } from "../../services/firebase";
 import { useDocumentOnce } from "react-firebase-hooks/firestore";
 import Login from "../../components/Login";
+import TextEditor from "../../components/TextEditor";
 
 const Document = () => {
   const [session] = useSession();
@@ -65,6 +66,8 @@ const Document = () => {
           onClick={() => signOut()}
         />
       </header>
+
+      <TextEditor />
     </div>
   );
 };
