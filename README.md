@@ -1,29 +1,51 @@
-# Next.js + Tailwind CSS Example
+# Google Docs Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a clone of Google Docs using Next JS, Tailwind CSS, and a Rich Text Editor.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Features
 
-## Preview
+- Sign In With Google
+- Full CRUD Functionality with Documents
+- Edit Document in a Rich Text Editor
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Tech Stack
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+**Client:** Next JS, TailwindCSS, Draft JS
 
-## Deploy your own
+**Server:** Firebase
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Screenshots
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+![App Screenshot 1](/screenshots/1.png)
+![App Screenshot 2](/screenshots/2.png)
+![App Screenshot 3](/screenshots/3.png)
 
-## How to use
+## Run Locally
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Clone the project
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+  git clone https://github.com/rkazi103/google-docs-clone
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Go to the project directory
+
+```bash
+  cd gmail-clone
+```
+
+Install dependencies (I used yarn)
+
+```bash
+  yarn
+```
+
+Start the server
+
+```bash
+  yarn start
+```
+
+## Feedback
+
+If you have any feedback, please reach out to me at rayan.quack.you@gmail.com
