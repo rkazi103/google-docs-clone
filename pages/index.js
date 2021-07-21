@@ -12,6 +12,7 @@ import Image from "next/image";
 import { db } from "../services/firebase";
 import firebase from "firebase";
 import { useCollectionOnce } from "react-firebase-hooks/firestore";
+import DocumentRow from "../components/DocumentRow";
 
 export default function Home() {
   const [session] = useSession();
@@ -117,6 +118,15 @@ export default function Home() {
             <p className="mr-12">Date Created</p>
             <Icon name="folder" size="3xl" color="gray" />
           </div>
+
+          {snapshot?.docs.map((doc) => (
+            <DocumentRow
+              key={doc.id}
+              id={doc.id}
+              fileName={doc.data().fileName}
+              date={doc.data().timestamp}
+            />
+          ))}
         </div>
       </section>
     </div>
