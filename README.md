@@ -43,7 +43,7 @@ Install dependencies (I used yarn)
 Start the server
 
 ```bash
-  yarn start
+  yarn dev
 ```
 
 ## Feedback
