@@ -31,7 +31,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd gmail-clone
+  cd google-docs-clone
 ```
 
 Install dependencies (I used yarn)
