@@ -45,7 +45,3 @@ Start the server
 ```bash
   yarn dev
 ```
-
-## Feedback
-
-If you have any feedback, please reach out to me at rayan.quack.you@gmail.com
